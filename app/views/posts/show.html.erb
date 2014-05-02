@@ -1,0 +1,5 @@
+<%= render partial: "post", locals: {post: @post} %>
+
+<% @post.comments.each do |comment| %>
+   <%= comment.body %>
+  <% end %>
